@@ -70,11 +70,11 @@ function setup() {
   background('#F4DCC9');
   // background('#585B56');
   noLoop();
-  // noStroke();
+  noStroke();
 }
 
 function draw() {
-  const scale = 80;
+  const scale = 30;
   strokeWeight(5);
   for (let y = 0; y < cells_down / scale; y++) {
     for (let x = 0; x < cells_across / scale; x++) {
@@ -89,9 +89,9 @@ function draw() {
         fill(color1);
         beginShape();
         vertex(x * scale, y * scale);
-        vertex(x * scale + 30, y * scale);
-        vertex(x * scale + 20, y * scale + 60);
-        vertex(x * scale - 10, y * scale + 60);
+        vertex(x * scale + scale / 2, y * scale);
+        vertex(x * scale + scale / 3, y * scale + scale);
+        vertex(x * scale - scale / 6, y * scale + scale);
         endShape(CLOSE);
       } else {
         if (x % 2) {
