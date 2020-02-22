@@ -1,0 +1,11 @@
+{
+  "name": "p5procgen",
+  "version": "1.0.0",
+  "description": "procgen practice in p5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "apratt",
+  "license": "ISC"
+}
